@@ -1,0 +1,179 @@
+.section-price,.whatwe{
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.teamcompany{
+    padding: 100px 0;
+    background-color: #fff;
+}
+.teamcompany .row>div{
+    float: left;
+}
+.teamcompany .row>div:first-child{
+    width: 50%;
+    padding: 0 15px;
+}
+.teamcompany .row>div img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px 0 rgb(26 38 74 / 25%);
+}
+.teamcompany .row>div>div{
+    margin: 20px 0 70px;
+    position: relative;
+}
+.teamcompany .row>div h2{
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.teamcompany .row>div:last-child{
+    width: 41.66666667%;
+    margin-left: 8.33333333%;
+}
+
+.teamcom ul{
+    margin: 20px 0 10px;
+    padding: 0 15px 10px 0;
+  }
+  .teamcom ul li{
+    float: left;
+    margin-right: 20px;
+  }
+  .teamcom ul li a{
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    color: #999;
+    font-weight: 600;
+    padding: 10px 3px;
+  }
+  .teamcom ul li a:hover{
+    color: #18ba60;
+  }
+  .teamcom ul li a.active{
+    color: #18ba60;
+    border-color: #18ba60;
+  }
+  .teamcom p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #909090;
+    line-height: 180%;
+  }
+  .teamcom>div{
+    position: absolute;
+    top: 137.4px;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s;
+  }
+  .teamcom>div.active{
+    opacity: 1;
+    z-index: 2;
+  }
+.teamcompany .row>div>div>div a{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 27px;
+    border-radius: 5px;
+    background-color: #18ba60;
+    margin-top: 30px;
+}
+.teamcompany .row>div>div>div a:hover{
+    background-color: #3b526b;
+}
+
+
+
+
+
+
+
+
+.section-price .row>div{
+    width: 33.3333333%;
+}
+.bus-easy{
+    padding: 70px 0;
+    background-image: url('../images/parallax-6.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bus-easy h2,.bus-easy p{
+    color: #fff;
+}
+.bus-easy .container>div{
+    text-align: center;
+}
+.bus-easy a{
+    color: #fff;
+    background-color: #18ba60;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+.bus-easy a:hover{
+    background-color: #3b526b;
+}
+.whatwe .row>div{
+    float: left;
+    width: 33.33333%;
+    padding: 0 15px;
+}
+.whatwe .row>div>div{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    border: 1px solid #e6e6e6;
+    transition: all .3s;
+}
+.what-inner{
+    padding: 30px;
+}
+.what-inner>div{
+    float: left;
+}
+.what-inner>div:first-child{
+    width: 80%;
+}
+.what-inner>div:nth-child(2){
+    width: 20%;
+}
+.whatwe .row>div>div h4{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.whatwe .row>div>div p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #909090;
+    margin-top: 5px;
+}
+.whatwe .row>div>div a{
+    display: inline-block;
+    color: #18ba60;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid #18ba60;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+}
+.whatwe .row>div>div:hover{
+    box-shadow: 10px 5px 90px 0 rgb(26 38 74 / 13%);
+}
+.whatwe .row>div>div:hover a{
+    color: #fff;
+    background-color: #18ba60;
+}

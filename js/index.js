@@ -253,5 +253,5 @@ $(function () {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
     });
-
+    $container.isotope({ filter: '*' });
 })

@@ -158,7 +158,14 @@ $(function () {
             }
         }
     }
+
+    function tiaotiao(index){
+        $('.banner .item').eq(index).find('.timetiao>div').animate({'width':'100%'},7000)
+        $('.banner .item').eq(index).siblings().find('.timetiao>div').animate({'width':'0'})
+    }
+    tiaotiao(0)
     // 下一个
+    // $('.banner>div .timetiao>div').css('width','100%')
     document.querySelector('.banner-next').onclick = function (event) {
         event.preventDefault()
         if (index < itemEles.length - 1) {
@@ -166,6 +173,10 @@ $(function () {
         } else {
             index = 0
         }
+
+        //轮播图上面的条条
+        tiaotiao(index)
+    
         removeItemClass()
         itemEles[index].style.display = 'block'
         setTimeout(function(){
@@ -182,6 +193,7 @@ $(function () {
         } else {
             index = itemEles.length - 1
         }
+        tiaotiao(index)
         removeItemClass()
         itemEles[index].style.display = 'block'
         setTimeout(function(){
@@ -203,6 +215,7 @@ $(function () {
                 }
             }
             addClass(this, 'active')
+            tiaotiao(index)
             itemEles[index].style.display = 'block'
             setTimeout(function(){
                 addClass(itemEles[index], 'active')
@@ -213,6 +226,8 @@ $(function () {
     var autoplay = setInterval(function () {
         document.querySelector('.banner-next').click()
     }, 7000)
+    
+   
     // var timetiaoEles = document.querySelectorAll('.banner .item .timetiao>div')
     // var autoplay1 = setInterval(function () {
     //     if (timetiaoEles[index].style.width != '100') {

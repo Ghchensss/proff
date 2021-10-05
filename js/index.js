@@ -247,11 +247,10 @@ $(function () {
     var $container = $('#container').isotope({
         // options
     });
-    $container.isotope({ filter: '*' });
+    $('#filters>button:first-child').click();
     // filter items on button click
     $('#filters').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
     });
-    $container.isotope({ filter: '*' });
 })
